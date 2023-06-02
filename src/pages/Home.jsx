@@ -1,24 +1,16 @@
-import '../css/style.css'
-import BannerPage from '../assets/banner-home-page.jpg'
-
-import Header from '../layout/Header'
-import Banner from '../components/Banner'
-import Gallery from '../components/Gallery'
-import Footer from '../layout/Footer'
+import Banner from "../components/Banner";
+import Gallery from "../components/Gallery";
+import BannerPage from "../assets/banner-home-page.jpg";
 
 const Home = () => {
-    const text = 'Chez vous, partout et ailleurs'
+  const text = "Chez vous, partout et ailleurs";
 
-    return (
-        <div className="container">
-            <Header />
-            <main>
-                <Banner picture={BannerPage} text={text} />
-                <Gallery />
-            </main>
-            <Footer />
-        </div>
-    )
-}
+  return (
+    <main>
+      <Banner picture={BannerPage} text={text} />
+      <Gallery />
+    </main>
+  );
+};
 
-export default Home
+export default Home;

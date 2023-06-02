@@ -11,7 +11,6 @@ import Checklist from '../components/Checklist'
 import Footer from '../layout/Footer'
 
 import housings from '../datas/housings.json'
-import '../css/style.css'
 
 const Housing = () => {
     const { id } = useParams() // récupération de l'id du logement présent dans les paramètres de l'url

@@ -4,7 +4,6 @@ import Dropdown from '../components/Dropdown'
 import Footer from '../layout/Footer'
 
 import BannerPage from '../assets/banner-about-page.jpg'
-import '../css/style.css'
 
 const About = () => {
     return (

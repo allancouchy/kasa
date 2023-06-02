@@ -2,8 +2,6 @@ import { Link } from 'react-router-dom'
 
 import Header from '../layout/Header'
 
-import '../css/style.css'
-
 const Error = () => {
     const errMsg = "Oups! La page que vous demandez n'existe pas"
     const errLinkMsg = "Retourner sur la page d'accueil"

@@ -3,33 +3,18 @@
 @import './base/base';
 
 @import './utils/keyframes';
+
 @import './layout/header';
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-ul {
-    padding: 0px;
-    margin: 0px;
-}
-ul 
-li {
-    list-style-type: none;
-}
-
-@import './layout/banner';
-@import './layout/gallery';
 @import './layout/footer';
 
-@import './pages/error';
-
+@import './pages/home';
 @import './pages/about';
-@import './components/dropdowns';
-
+@import './pages/error';
 @import './pages/housing';
+
+@import './components/dropdowns';
 @import './components/carousel';
 @import './components/tags';
 @import './components/host';
 @import './components/stars';
+

@@ -1,19 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-.container {
+body {
+  margin: 0px;
+}
+
+#root {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: "montserrat";
   font-style: normal;
   font-weight: 500;
-  display: flex;
-  flex-direction: column;
   margin: auto;
 }
-.container--hsg {
+#root--hsg {
   color: #FF6060;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 img {
   object-fit: cover;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  list-style-type: none;
 }
 
 /*
@@ -80,24 +100,40 @@ img {
   text-decoration: underline;
 }
 
-main {
+/*
+    building the footer style
+*/
+.footer {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  align-self: center;
+  background-color: #000000;
+  padding: 29px 0px;
+  margin-top: 40px;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    width: 95%;
+    margin-top: 20px;
+  }
+}
+.footer__logo {
+  width: 122px;
+  margin-top: 30px;
+}
+.footer__text {
+  font-size: 24px;
+  color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .footer__text {
+    font-size: 12px;
+  }
 }
 
-ul {
-  padding: 0px;
-  margin: 0px;
-}
-
-ul li {
-  list-style-type: none;
-}
-
-/*
-    building the banner style
-*/
+/* building the banner style */
 .banner {
   width: 86%;
   height: 223px;
@@ -168,9 +204,7 @@ ul li {
   }
 }
 
-/*
-    building the gallery style
-*/
+/* building the gallery style */
 .gallery {
   width: 86%;
   border-radius: 25px;
@@ -258,38 +292,8 @@ ul li {
 }
 
 /*
-    building the footer style
+    building the style of the about page
 */
-.footer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-self: center;
-  background-color: #000000;
-  padding: 29px 0px;
-  margin-top: 40px;
-}
-@media screen and (max-width: 768px) {
-  .footer {
-    width: 95%;
-    margin-top: 20px;
-  }
-}
-.footer__logo {
-  width: 122px;
-  margin-top: 30px;
-}
-.footer__text {
-  font-size: 24px;
-  color: #ffffff;
-}
-@media screen and (max-width: 768px) {
-  .footer__text {
-    font-size: 12px;
-  }
-}
-
 /*
     building the style of the error page
 */
@@ -333,8 +337,85 @@ ul li {
 }
 
 /*
-    building the style of the about page
+    building the style of the housing page
 */
+.housing {
+  width: 86%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+@media screen and (max-width: 768px) {
+  .housing {
+    width: 95%;
+  }
+}
+.housing__infos {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 992px) {
+  .housing__infos {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 992px) {
+  .housing__infos__bloc--hsg {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.housing__infos__title {
+  font-size: 36px;
+  font-weight: 500;
+  margin-top: 0px;
+}
+@media screen and (max-width: 992px) {
+  .housing__infos__title {
+    font-size: 27px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .housing__infos__title {
+    font-size: 18px;
+  }
+}
+.housing__infos__location {
+  font-size: 18px;
+}
+@media screen and (max-width: 992px) {
+  .housing__infos__location {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .housing__infos__location {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .housing__infos__rating {
+    min-width: 75px;
+  }
+}
+.housing__dropdowns {
+  display: flex;
+  justify-content: space-between;
+}
+.housing__dropdowns--hsg {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 992px) {
+  .housing__dropdowns--hsg {
+    height: auto;
+    margin-top: 20px;
+    flex-direction: column;
+  }
+}
+
 /*
     building the dropdown style
 */
@@ -467,86 +548,6 @@ ul li {
 @media screen and (max-width: 768px) {
   .dropdown-hsg__content__text {
     font-size: 12px;
-  }
-}
-
-/*
-    building the style of the housing page
-*/
-.housing {
-  width: 86%;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-}
-@media screen and (max-width: 768px) {
-  .housing {
-    width: 95%;
-  }
-}
-.housing__infos {
-  display: flex;
-  justify-content: space-between;
-}
-@media screen and (max-width: 992px) {
-  .housing__infos {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 992px) {
-  .housing__infos__bloc--hsg {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-.housing__infos__title {
-  font-size: 36px;
-  font-weight: 500;
-  margin-top: 0px;
-}
-@media screen and (max-width: 992px) {
-  .housing__infos__title {
-    font-size: 27px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .housing__infos__title {
-    font-size: 18px;
-  }
-}
-.housing__infos__location {
-  font-size: 18px;
-}
-@media screen and (max-width: 992px) {
-  .housing__infos__location {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .housing__infos__location {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .housing__infos__rating {
-    min-width: 75px;
-  }
-}
-.housing__dropdowns {
-  display: flex;
-  justify-content: space-between;
-}
-.housing__dropdowns--hsg {
-  display: flex;
-  justify-content: space-between;
-}
-@media screen and (max-width: 992px) {
-  .housing__dropdowns--hsg {
-    height: auto;
-    margin-top: 20px;
-    flex-direction: column;
   }
 }
 

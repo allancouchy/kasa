@@ -27,12 +27,8 @@
     opacity: 0.3;
     z-index: 2;
 
-    @include tab {
-      width: 84%;
-    }
-
     @include mob {
-      width: 92%;
+      width: 95%;
       height: 111px;
       border-radius: 10px;
     }
@@ -117,7 +113,7 @@
 
     &::after {
       content: "";
-      width: 23.2%;
+      width: 23.22%;
       height: 340px;
       border-radius: 10px;
       background: linear-gradient(
@@ -129,12 +125,12 @@
       z-index: 2;
 
       @include tab {
-        width: 34%;
+        width: 34.4%;
         height: 300px;
       }
 
       @include mob {
-        width: 93%;
+        width: 95%;
         height: 255px;
       }
     }

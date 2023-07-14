@@ -19,10 +19,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       {/* configuration des différentes routes */}
       <Header />
       <Routes>
-        <Route path={"kasa/"} element={<Home />} />
-        <Route path={"kasa/about"} element={<About />} />
-        <Route path={"kasa/housings/:id"} element={<Housing />} />
-        <Route exact path={"*"} element={<Error />} />
+        <Route path={"/kasa/"} element={<Home />} />
+        <Route path={"/kasa/about"} element={<About />} />
+        <Route path={"/kasa/housings/:id"} element={<Housing />} />
+        <Route exact path={"/*"} element={<Error />} />
       </Routes>
       <Footer />
     </Router>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { GlobalStyle } from './GlobalStyle'
+import { GlobalStyle } from './styled-components/GlobalStyle'
 
 import Header from './components/Header'
 import Home from './pages/Home'
